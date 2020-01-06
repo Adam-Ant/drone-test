@@ -11,3 +11,8 @@ steps:
   image: alpine
   commands:
     - echo "Hello World"
+- name: build2
+  pull: always
+  image: alpine
+  commands:
+    - echo "Hello World"
