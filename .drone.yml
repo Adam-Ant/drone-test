@@ -16,3 +16,24 @@ steps:
   image: alpine
   commands:
     - echo "Hello World"
+
+---
+
+kind: pipeline
+name: default2
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: build
+  pull: always
+  image: alpine
+  commands:
+    - echo "Hello World"
+- name: build2
+  pull: always
+  image: alpine
+  commands:
+    - echo "Hello World"
